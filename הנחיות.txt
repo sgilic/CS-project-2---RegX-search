@@ -1,0 +1,36 @@
+Background: 
+A regex matching algorithm is an algo A that takes a pattern R and a text T and finds all sub-strings of T that match the pattern R. One example of this is unix's grep.
+
+for a given (continous) sub-string S of T we define the span of S as the indexes i,j such that S=T[i]...T[j].
+
+Project outline:
+The project is to take 2 state of the art regex matching algorithms and modify them so that their out put on on R and T are a list of the spans found by the Algorithm and the time it took the Alg to find the spans.
+
+תבחר 2 אלגוריתמים מהרשימה הבאה:
+
+Agrep
+Gnu Grep
+NR-grep
+RE2 (this is a google system that also has a regex matcher within it)
+
+
+לכל אלגוריתם אנחנו רוצים תיקיה שמכילה
+-קובץ טקסט עם:
+1. קישור הורדה לsource code המקורי שהתחלת איתו ושם הגרסא למקרה שהקישור יהפוך ללא פעיל בעתיד.
+2. רשימה של השינויי קוד שעשית לקוד המקור (אם הם לא טריוויאלים אז עם הסבר קטן)
+
+-תיקיה של הקוד המעודכן עם makefile שמכין קובץ הרצה של הexecutable של האלגוריתמם המשופר.
+
+הקובץ הרצה אמור לפעול ככה (נניח שקוראים לו Agrep):
+
+עבור קובץ in.txt שמכיל את המחרוזת 
+aaaabbaabbb 
+ביטוי רגולרי 
+b+
+
+ההרצה אמורה להיראות ככה
+>>>> Agrep b+ in.txt
+bb, [4,5], 20
+bbb, [8,10], 45
+
+כאשר לקח לתכנית 20 מילי שניות למצוא את ההתאמה הראשונה ו45 מילי שניות למצוא את ההתאמה השניה.
