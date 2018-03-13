@@ -35,9 +35,8 @@ nr-grep activation:
 
 re2 activation:
 
-        in command line:
         
-              "./<path to re2_wrapper.py>/re2_wrapper.py <filename (where we search for pattern)> <pattern>
+              ./<path to re2_wrapper.py>/re2_wrapper.py <filename (where we search for pattern)> <pattern>
 
 --------------------------------------------------------------------------------------------------------------------
 
