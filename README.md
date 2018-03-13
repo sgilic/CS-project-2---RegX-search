@@ -29,7 +29,7 @@ nr-grep activation:
       
       b) in command line:
       
-            "./<path to nr-grep_wrapper.py>/nr-grep_wrapper.py <filename (where we search for pattern)> <pattern>"
+            ./<path to nr-grep_wrapper.py>/nr-grep_wrapper.py <filename (where we search for pattern)> <pattern>
 
 6. re2_wrapper.py
 
