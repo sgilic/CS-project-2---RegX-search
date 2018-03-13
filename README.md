@@ -68,7 +68,7 @@ re2:
       
       8. sudo python setup.py install
       
-- for more information:
+-- for more information:
 
   https://pypi.python.org/pypi/re2/0.2.20
   
