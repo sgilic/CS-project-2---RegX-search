@@ -13,6 +13,10 @@ Gnu Grep
 NR-grep
 RE2 (this is a google system that also has a regex matcher within it)
 
+The algorithems that were chosen:
+NR-grep
+RE2
+
 Each algorithm should have a folder with it's open source code and a list of your modifications.
 Also, an executable that generates a Makfile of the new code.
 
