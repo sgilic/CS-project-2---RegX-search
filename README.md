@@ -26,7 +26,7 @@ basic text file for checking output.
 nr-grep activation:
       a) change nr-grep installation path at the lines 13 (e.g "/home/sgilic/Gil/nrgrep-1.1.2/nrgrep")
       b) in command line:
-            "./<path to nr-grep_wrapper.py>/nr-grep_wrapper.py <filename (where we search for pattern)> <pattern>
+            "./<path to nr-grep_wrapper.py>/nr-grep_wrapper.py <filename (where we search for pattern)> <pattern>"
 
 6. re2_wrapper.py
 
@@ -77,12 +77,9 @@ re2:
 # Documentation
 
 nr-grep:
-
       https://www.dcc.uchile.cl/~gnavarro/ps/spe01.pdf
       
-
 re2:
-
       https://github.com/google/re2/wiki
 
       
