@@ -89,6 +89,7 @@ re2:
 # Notes
 
 nr-grep delivers search results simultaneously.
+
 In order to distinguish between results search time, nr-grep_wrapper.py uses pre-processing stage
 for collecting the results and messures each result search time separately.
 
