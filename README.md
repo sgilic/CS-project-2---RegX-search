@@ -29,7 +29,7 @@ nr-grep activation:
       
       b) in command line:
       
-            ./<path to nr-grep_wrapper.py>/nr-grep_wrapper.py <filename (where we search for pattern)> <pattern>
+            python <path to nr-grep_wrapper.py>/nr-grep_wrapper.py <filename (where we search for pattern)> <pattern>
 
 6. re2_wrapper.py
 
@@ -52,23 +52,23 @@ nr-grep:
       
 re2:
 
-      1. copy files from:
+      1. git clone https://code.googlesource.com/re2
       
-            https://github.com/facebook/pyre2/
-            
-      2. make
+      2. cd re2
       
-      3. make test
+      3. make
       
-      4. make install
+      4. make test
       
-      5. make testinstall
+      5. make install
       
-      6. git clone git://github.com/axiak/pyre2.git
+      6. make testinstall
       
-      7. cd pyre2.git
+      7. git clone git://github.com/axiak/pyre2
       
-      8. sudo python setup.py install
+      8. cd pyre2.git
+      
+      9. sudo python setup.py install
       
 -- for more information:
 
@@ -84,5 +84,13 @@ nr-grep:
 re2:
       https://github.com/google/re2/wiki
 
-      
+ --------------------------------------------------------------------------------------------------------------------
+
+# Notes
+
+nr-grep delivers search results simultaneously.
+In order to distinguish between results search time, nr-grep_wrapper.py uses pre-processing stage
+for collecting the results and messures each result search time separately.
+
+
    
