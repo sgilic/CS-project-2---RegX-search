@@ -22,7 +22,7 @@ def main():
 	
 	for res in results:		
 		start_time = time.time()	
-		match = re2.search(pattern,data)
+		match = re2.search(getResMatch(res), data)
 		end_time = time.time()
 		pos_str = '[' + str(res.span()[0]) + ',' + str(res.span()[1]) + ']'
 		print(getResMatch(res) + ', ' + pos_str + ', ' + str((end_time - start_time)*1000))
