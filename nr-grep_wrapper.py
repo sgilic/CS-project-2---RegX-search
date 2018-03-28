@@ -27,8 +27,6 @@ def main():
 	status, output = commands.getstatusoutput(cmd+" "+pattern+" "+filename)
 	results = re.finditer(pattern,str(output))
 	len_results, results = getLenAndIter(results)
-	print (results)
-	print (len_results)
 	for res in results:
 		start_time = time.time()
 		status, output = commands.getstatusoutput(cmd+" "+str(res.group())+" "+filename)
